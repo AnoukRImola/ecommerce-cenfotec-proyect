@@ -1,11 +1,14 @@
 import Nav from "./Components/Nav";
-import logo from "./Assets/logo.png"
+import Section from "./Components/Section";
+import Footer from "./Components/Footer";
+
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container-fluid">
       <Nav />
-      <img src={logo} alt="logo" />  
+      <Section />
+      <Footer />
     </div>
   );
 }
