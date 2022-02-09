@@ -30,6 +30,11 @@ const Section = () => {
                         <button type="button" onClick={()=> suma(-1)} className="btn btn-primary m-1">-</button>
                     </div>
             </div>
+            <form>
+                <input></input>
+                <input></input>
+                <input></input>
+            </form>
         </main>
     )
 }
