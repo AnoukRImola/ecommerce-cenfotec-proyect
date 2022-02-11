@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+
+.App{
+    display: flex;
+    
+    flex-flow: column nowrap;
+}
+
+/*nav*/
+.navbar div img{
+    margin: 1.5rem;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    display: inline;
+    margin: 4rem 2rem;
+    text-decoration: none;
+}
+
+/*main*/
+.section-main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
