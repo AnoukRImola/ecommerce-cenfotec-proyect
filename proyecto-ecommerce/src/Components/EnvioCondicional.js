@@ -2,24 +2,7 @@
 
 const EnvioCondicional = () => {
 
-    const zona = ["San José", "Heredia", "Cartago"]
-
-    const condicion = (props) =>{
-        
-        if ( props.name == "Sara" ) {
-            return alert("pruebasi");
-          }
-          return alert("pruebano");{
-        }
-    }
-
-    const Botton = () =>{
-        return(
-            <>
-            <button class="dropdown-item" type="button">San José</button>
-            </>
-        )
-    }
+    
     
 
   return (
