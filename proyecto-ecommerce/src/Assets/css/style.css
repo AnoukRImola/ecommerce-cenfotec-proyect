@@ -4,7 +4,6 @@
 
 .App{
     display: flex;
-    
     flex-flow: column nowrap;
 }
 
@@ -32,4 +31,17 @@ nav ul li{
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin: 3rem 0;
+}
+
+.descuento{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.descuento p{
+    width: 21rem;
+    border: 3px solid rgb(5, 17, 53);
+    margin: 2rem 0;
+    font-size: larger;
 }
