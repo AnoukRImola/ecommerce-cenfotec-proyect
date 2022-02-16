@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 class Listado extends Component {
   constructor(props) {
     super(props);
@@ -8,9 +9,9 @@ class Listado extends Component {
   render() {
     const { zonas } = this.props;
     return (
-      <ul>
+      <ul style={{listStyleType: "none"}}>
         {zonas.map((zona) => (
-          <li>Esra es la zona de {zona} </li>
+          <li key={zona}>{zona} </li>
         ))}
       </ul>
     );
@@ -20,21 +21,36 @@ class Listado extends Component {
 class EnvioCondicional extends Component {
   constructor(props) {
     super(props);
+
+    this.state ={
+      mostrarListado:true
+    };
+  }
+
+  showListado(){
+    this.setState({mostrarListado: !this.state.mostrarListado});
+  }
+
+  renderListado(zonas){
+    const {mostrarListado} = this.state;
+    if (mostrarListado) {
+      return <Listado zonas={zonas}/>
+    } else {
+    }
   }
   render() {
     const zonas = [
       "San Jose",
       "Heredia",
       "Cartago",
-      "Alajuela",
-      "Limón",
-      "Puntarenas",
-      "Guanacaste",
+      "Alajuela"
     ];
     return (
-    <div>
-        <Listado zonas={zonas} />
-        <button onClick={()=> this.setState()}={}></button>
+    <div className="enviocondicional">
+      <div style={{width: "30%"}}>
+        {this.renderListado(zonas)}
+        <button onClick={()=> this.showListado()}>ZONAS CON ENVIO GRATIS</button>
+        </div>
     </div>
     );
   }

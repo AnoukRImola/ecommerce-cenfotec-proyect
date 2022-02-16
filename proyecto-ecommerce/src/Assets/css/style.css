@@ -33,7 +33,7 @@ nav ul li{
     margin: 3rem 0;
 }
 
-.descuento{
+.descuento, .enviocondicional{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -44,4 +44,9 @@ nav ul li{
     border: 3px solid rgb(5, 17, 53);
     margin: 2rem 0;
     font-size: larger;
+}
+
+.enviocondicional div{
+    flex-flow: column;
+    
 }
