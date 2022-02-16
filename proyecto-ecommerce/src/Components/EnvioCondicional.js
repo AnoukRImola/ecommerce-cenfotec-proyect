@@ -34,6 +34,7 @@ class EnvioCondicional extends Component {
     return (
     <div>
         <Listado zonas={zonas} />
+        <button onClick={()=> this.setState()}={}></button>
     </div>
     );
   }
