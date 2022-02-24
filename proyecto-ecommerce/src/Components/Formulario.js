@@ -4,11 +4,14 @@ import { Formik } from "formik";
 const Formulario = () => {
     
         return(
-            <>
+            <div className="formulario">
+                <div className="sub-form">
+                <h1>Contáctenos</h1>
              <Formik
                  initialValues={{
                      nombre: "",
-                     correo: ""
+                     correo: "",
+                     comentario: ""
                  }}            
                  validate={(valores) => {
                      let errores = {};
@@ -27,6 +30,11 @@ const Formulario = () => {
                        errores.correo = "Por favor digite un correo válido"
                     }
 
+                      //Validación comentario
+                      if(!valores.comentario){
+                        errores.comentario = "Por favor ingresa un comentario"  
+                    } 
+
                       return errores;
                  } }
                  onSubmit={(valores, {resetForm}) => {
@@ -36,7 +44,7 @@ const Formulario = () => {
                  {({values, errors, touched, handleSubmit, handleChange, handleBlur}) => (
                     <form onSubmit={handleSubmit}>
                         <div>
-                            <label htmlFor="nombre">Nombre</label>
+                            <label htmlFor="nombre">Nombre</label><br/>
                             <input 
                                 type="text" 
                                 id="nombre" 
@@ -45,10 +53,10 @@ const Formulario = () => {
                                 onChange={handleChange}
                                 onBlur={handleBlur}
                             />
-                            {touched.nombre && errors.nombre && <div>{errors.nombre}</div>}
+                            {touched.nombre && errors.nombre && <p>{errors.nombre}</p>}
                         </div>
                         <div>
-                            <label htmlFor="correo">Correo</label>
+                            <label htmlFor="correo">Correo</label><br/>
                             <input 
                                 type="email" 
                                 id="correo" 
@@ -57,13 +65,26 @@ const Formulario = () => {
                                 onChange={handleChange}
                                 onBlur={handleBlur}
                             />
-                            {touched.correo && errors.correo && <div>{errors.correo}</div>}
+                            {touched.correo && errors.correo && <p>{errors.correo}</p>}
+                        </div>
+                        <div>
+                            <label htmlFor="comentario">Comentario</label><br/>
+                            <textarea
+                                type="text" 
+                                id="comentario" 
+                                name="comentario"
+                                value={values.comentario}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                            />
+                            {touched.comentario && errors.comentario && <p>{errors.comentario}</p>}
                         </div>
                         <button type="submit">Enviar</button>
                     </form>
                 )}
               </Formik>
-            </>
+              </div>
+            </div>
         )
     
 }

@@ -4,6 +4,7 @@ import Footer from "./Components/Footer";
 import Descuento from "./Components/Descuento";
 import EnvioCondicional from "./Components/EnvioCondicional";
 import Formulario from "./Components/Formulario";
+import BackDivisa from "./Components/BackDivisa";
 
 
 
@@ -17,6 +18,8 @@ function App() {
       <EnvioCondicional/>
       <hr/>
       <Formulario />
+      <hr/>
+      <BackDivisa />
       <Footer />
     </div>
   );
