@@ -33,7 +33,7 @@ nav ul li{
     margin: 3rem 0;
 }
 
-.descuento, .enviocondicional, .formulario, .sub-form{
+.descuento, .enviocondicional, .formulario, .sub-form, .divisa{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -69,4 +69,12 @@ form div input, textarea{
 form div p{
     color: red;
     font-size: x-small;
+}
+
+.sub-divisa{
+    border: 3px solid rgb(5, 17, 53);
+    margin: 2rem 0;
+    border-radius: 2%;
+    padding: 3rem;
+    width: 35rem;
 }

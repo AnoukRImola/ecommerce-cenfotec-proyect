@@ -21,9 +21,8 @@ class Listado extends Component {
 class EnvioCondicional extends Component {
   constructor(props) {
     super(props);
-
     this.state ={
-      mostrarListado:true
+      mostrarListado:false
     };
   }
 
