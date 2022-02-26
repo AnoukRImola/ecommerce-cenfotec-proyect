@@ -34,13 +34,6 @@ export default function BackDivisa() {
         })
     }, [])
    
-   useEffect(() => {
-    if (fromDivisa != null && toDivisa != null) {
-      fetch(`${UrlBase}?base=${fromDivisa}&symbols=${toDivisa}`)
-        .then(res => res.json())
-        .then(data => setIntercambio(data.rates[toDivisa]))
-    }
-  }, [])
  
   function handleFromMontoChange(e) {
     setMonto(e.target.value)

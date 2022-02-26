@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from "../Assets/logo.png"
 
 
@@ -11,9 +12,10 @@ const Nav = () => {
            </div>
            <nav>
               <ul>
-                  <li>HOME</li>
-                  <li>MUJER</li>
-                  <li>HOMBRE</li>
+                  <li><Link to="/">HOME</Link></li>
+                  <li><Link to="/mujer">MUJER</Link></li>
+                  <li><Link to="/hombre">HOMBRE</Link></li>
+                  <li><Link to="/contacto">Contacto</Link></li>
               </ul>
            </nav>
         </header>
