@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import Divisa from "./Divisa";
+import Divisa from "../Divisa";
+import "../BackDivisa/BackDivisa.css"
 
 const UrlBase = 'http://api.exchangeratesapi.io/v1/latest?access_key=27617e6680f44c3208a8a2eacb8883d3'
 

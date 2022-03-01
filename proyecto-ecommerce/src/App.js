@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import Nav from "./Components/Nav";
+import Nav from "./Components/Nav/Nav";
 import Footer from "./Components/Footer";
-import Formulario from "./Components/Formulario";
+import Formulario from "./Components/Formulario/Formulario";
 import Home from "./Components/Home";
 import Mujer from "./Components/Mujer";
 import Hombre from "./Components/Hombre";
+import "../src/App.css"
 
 
 function App() {

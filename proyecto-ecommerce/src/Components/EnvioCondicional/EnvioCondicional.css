@@ -1,0 +1,9 @@
+.enviocondicional{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.enviocondicional div{
+    flex-flow: column;
+}

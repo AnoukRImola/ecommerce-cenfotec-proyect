@@ -1,6 +1,7 @@
 import { useState } from "react";
-import mujer from "../Assets/img/mujer.png";
-import men from "../Assets/img/men.png";
+import mujer from "../../Assets/img/mujer.png";
+import men from "../../Assets/img/men.png";
+import "../Section/Section.css"
 
 const Section = () => {
 

@@ -1,7 +1,7 @@
-import Section from "./Section";
-import Descuento from "./Descuento";
-import EnvioCondicional from "./EnvioCondicional";
-import BackDivisa from "./BackDivisa";
+import Section from "./Section/Section";
+import Descuento from "./Descuento/Descuento";
+import EnvioCondicional from "./EnvioCondicional/EnvioCondicional";
+import BackDivisa from "./BackDivisa/BackDivisa";
 
 
 
