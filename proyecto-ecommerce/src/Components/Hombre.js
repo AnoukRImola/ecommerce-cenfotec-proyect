@@ -11,8 +11,8 @@ export default function Hombre() {
     }
 
   return (
-    <div>
-        <div className="card" style={{width: "20rem"}}>
+    <div style={{display: 'flex'}}>
+        <div className="card" style={{width: "20rem", margin: "3rem"}}>
                 <img src={men} className="card-img-top" alt="hombre"/>
                     <div className="card-body">
                         <p className="card-text">HOMBRE</p>
@@ -21,6 +21,34 @@ export default function Hombre() {
                         <button type="button" onClick={()=> suma(-1)} className="btn btn-primary m-1">-</button>
                     </div>
             </div>
+            <div className="card" style={{width: "20rem", margin: "3rem"}}>
+                <img src={men} className="card-img-top" alt="hombre"/>
+                    <div className="card-body">
+                        <p className="card-text">HOMBRE</p>
+                        <p>Cantidad: {item}</p>
+                        <button type="button" onClick={()=> suma(1)} className="btn btn-primary m-1">+</button>
+                        <button type="button" onClick={()=> suma(-1)} className="btn btn-primary m-1">-</button>
+                    </div>
+            </div>
+            <div className="card" style={{width: "20rem", margin: "3rem"}}>
+                <img src={men} className="card-img-top" alt="hombre"/>
+                    <div className="card-body">
+                        <p className="card-text">HOMBRE</p>
+                        <p>Cantidad: {item}</p>
+                        <button type="button" onClick={()=> suma(1)} className="btn btn-primary m-1">+</button>
+                        <button type="button" onClick={()=> suma(-1)} className="btn btn-primary m-1">-</button>
+                    </div>
+            </div>
+            <div className="card" style={{width: "20rem", margin: "3rem"}}>
+                <img src={men} className="card-img-top" alt="hombre"/>
+                    <div className="card-body">
+                        <p className="card-text">HOMBRE</p>
+                        <p>Cantidad: {item}</p>
+                        <button type="button" onClick={()=> suma(1)} className="btn btn-primary m-1">+</button>
+                        <button type="button" onClick={()=> suma(-1)} className="btn btn-primary m-1">-</button>
+                    </div>
+            </div>
+            
     </div>
   )
 }
