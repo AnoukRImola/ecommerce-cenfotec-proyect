@@ -3,9 +3,7 @@ import "../EnvioCondicional/EnvioCondicional.css"
 
 
 class Listado extends Component {
-  constructor(props) {
-    super(props);
-  }
+  
 
   render() {
     const { zonas } = this.props;
